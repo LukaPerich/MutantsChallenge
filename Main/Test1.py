@@ -1,7 +1,7 @@
 #Creando la matriz: 
 Matriz1=[
     ["F","A","A","A","A","A"],
-    ["C","A","G","T","G","C"],
+    ["F","A","G","T","G","C"],
     ["T","T","A","T","G","T"],
     ["A","A","A","A","G","G"],
     ["C","C","C","C","T","A"],
@@ -20,11 +20,17 @@ fila6=Matriz1[5]
 
 
 coindencia=0
-for fila in Matriz1: 
-    for i in range(len(fila)-4): 
-        if (fila[i]==fila[i+1] and fila1[i+1]==fila1[i+2] and fila[i+2]==fila[i+4]) or (fila[i+1]==fila[i+2] and fila1[i+2]==fila1[i+3] and fila[i+3]==fila[i+4]) or (fila[i+2]==fila[i+3] and fila1[i+3]==fila1[i+4] and fila[i+4]==fila[i+5]): 
-            coindencia=coindencia+1
+#for fila in Matriz1: 
+    #for i in range(len(fila)-4): 
+    # if (fila[i]==fila[i+1] and fila1[i+1]==fila1[i+2] and fila[i+2]==fila[i+4]) or (fila[i+1]==fila[i+2] and fila1[i+2]==fila1[i+3] and fila[i+3]==fila[i+4]) or (fila[i+2]==fila[i+3] and fila1[i+3]==fila1[i+4] and fila[i+4]==fila[i+5]): 
+            #coindencia=coindencia+1
         
+
+
+for columna in Matriz1: 
+    for i in columna: 
+        print (Matriz1[i][columna])
+
 
 if coindencia>=2: 
     print("Mutante")
