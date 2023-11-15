@@ -32,9 +32,11 @@ Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de f
    
    Clona el repositorio desde este enlace: 
        https://github.com/LukaPerich/MutantsChallenge.git
+       
    Ingresa al directorio del proyecto y ejecuta VS code
    
    Una vez dentro del programa corre el siguiente comando: 
-        ´´´
-         python main.py
-     ´´´ 
+   ```bash
+python main.py
+```
+       
