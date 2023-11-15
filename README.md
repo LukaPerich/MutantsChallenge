@@ -1,7 +1,7 @@
 # MutantsChallenge
-+Nombre y Apellido: Luka Perich
-+Legajo: 51618
-+Email:lperich29@gmail.com
+    Nombre y Apellido: Luka Perich
+    Legajo: 51618
+    Email:lperich29@gmail.com
 
 ## Introduccion:  
 El presente trabajo corresponde al proyecto final integrador realizado para la materia Programacion I de la Tecnicatura Superior en Programación de la Universidad Tecnológica
