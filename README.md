@@ -27,8 +27,10 @@ Lo primero que hice fue hacer una funcion para llenar la matriz, la cual llena c
 Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de forma vertical, horizontal o diagonal si hay alguna coincidencia de 4 letras consecutivas, esto se realizo con (set.) para verificar si hay solo un elemento único, una vez hallada la coincidencia use un contador para llevar un registro de la cantidad de coincidencia que la funcion encontraba, por ultimo use una condicion para ver si había más de una coincidencia, esta funcion retorna la condicion de la persona que, en caso de tener más de dos coincidencias retorna "Mutante" y en caso de tener 1 o menos retorna "No mutante"
 
 ## Como correrlo: 
-    Clona el repositorio desde este enlace: https://github.com/LukaPerich/MutantsChallenge.git
-Ingresa al directorio del proyecto y ejecuta VS code
-Una vez dentro del programa corre el siguiente comando:
+### Clona el repositorio desde este enlace: 
+    https://github.com/LukaPerich/MutantsChallenge.git
+### Ingresa al directorio del proyecto y ejecuta VS code
+
+### Una vez dentro del programa corre el siguiente comando:
     python main.py
    
