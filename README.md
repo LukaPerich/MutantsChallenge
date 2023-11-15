@@ -1,9 +1,9 @@
-# MutantsChallenge
+># MutantsChallenge
     Nombre y Apellido: Luka Perich
     Legajo: 51618
     Email:lperich29@gmail.com
 
-## Introduccion:  
+>## Introduccion:  
 El presente trabajo corresponde al proyecto final integrador realizado para la materia Programacion I de la Tecnicatura Superior en Programación de la Universidad Tecnológica
 Regional con sede en Mendoza. A todos los grupos el profesor: Ing. Nicolas Quiros les
 dio un desafio desarrollado por Mercado Libre, el cual busca integrar conocimientos sobre, matrices, funciones, metodos , bucles y condicionales. 
