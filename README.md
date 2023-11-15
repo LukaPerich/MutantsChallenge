@@ -28,12 +28,12 @@ Este proyecto corresponnde a la resolucion del mismo, la cual resulto exitosa y 
 >## Como fue resulto: 
 Lo primero que hice fue hacer una funcion para llenar la matriz, la cual llena cada espacio de una matriz de la dimension que le pase el usuario en este caso 6x6, una vez que se van cargado los datos la misma funcion va corroborando si los datos ingresados son correctos, en caso de ser correcto sigue interarndo hasta llenar la matriz, en caso de que no sea correcto le vuelve a pedir al usuario un tipo de dato valido, una vez ingresado el dato valido la funcion llena la matriz.
     
-Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de forma vertical, horizontal o diagonal si hay alguna coincidencia de 4 letras consecutivas, esto se realizo con (set.) para verificar si hay solo un elemento único, una vez hallada la coincidencia use un contador para llevar un registro de la cantidad de coincidencia que la funcion encontraba, por ultimo use una condicion para ver si había más de una coincidencia, esta funcion retorna la condicion de la persona que, en caso de tener más de dos coincidencias retorna "Mutante" y en caso de tener 1 o menos retorna "No mutante".
+Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de forma vertical, horizontal o diagonal si hay alguna coincidencia de 4 letras consecutivas, esto se realizo con (set.) para verificar si todas las letras en las diagonales son iguales., una vez hallada la coincidencia use un contador para llevar un registro de la cantidad de coincidencia que la funcion encontraba, por ultimo use una condicion para ver si había más de una coincidencia, esta funcion retorna la condicion de la persona que, en caso de tener más de dos coincidencias retorna "Mutante" y en caso de tener 1 o menos retorna "No mutante".
 
 >## Casos de Prueba:
 
 ```bash
-Muestra por pantalla: es Mutante
+Muestra por pantalla: Es Mutante
 ATGCGA
 CAGTGC
 TTATGT
@@ -42,7 +42,7 @@ CCCCTA
 TCACTG
 ```
 ```bash
-Muestra por pantalla: no es Mutante
+Muestra por pantalla: No es Mutante
 TGCGA
 CAGTGC
 TTATTT
