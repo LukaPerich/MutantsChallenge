@@ -40,7 +40,10 @@ Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de f
 python main.py
 ```
 En caso de querer correr el codigo directamente: 
-Copia y pega el codigo en Vs code en un archivo con la extencion .py
+
+Copia y pega el siguiente codigo en Vs code en un archivo con la extencion .py
+
+(Recuerda tener intaladas las extenciones correspondientes)
 
 ```python
 #Usamos esta funcion para darle dimension y llenar la matriz 
