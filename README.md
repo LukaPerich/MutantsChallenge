@@ -1,4 +1,4 @@
-# MutantsChallenge
+># MutantsChallenge
 Nombre y Apellido: Luka Perich
 
 Legajo: 51618
@@ -28,15 +28,69 @@ Lo primero que hice fue hacer una funcion para llenar la matriz, la cual llena c
     
 Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de forma vertical, horizontal o diagonal si hay alguna coincidencia de 4 letras consecutivas, esto se realizo con (set.) para verificar si hay solo un elemento único, una vez hallada la coincidencia use un contador para llevar un registro de la cantidad de coincidencia que la funcion encontraba, por ultimo use una condicion para ver si había más de una coincidencia, esta funcion retorna la condicion de la persona que, en caso de tener más de dos coincidencias retorna "Mutante" y en caso de tener 1 o menos retorna "No mutante"
 
-## Como correrlo: 
+>## Como correrlo: 
    
    Clona el repositorio desde este enlace: 
        https://github.com/LukaPerich/MutantsChallenge.git
        
-   Ingresa al directorio del proyecto y ejecuta VS code
+   Ingresa al directorio del proyecto y ejecuta VS code (Asegurate de tener Python instaldo en tu computadora)
    
    Una vez dentro del programa corre el siguiente comando: 
    ```bash
 python main.py
 ```
+En caso de querer correr el codigo directamente: 
+Copia y pega el codigo en Vs code en un archivo con la extencion .py
+
+```python
+#Usamos esta funcion para darle dimension y llenar la matriz 
+def llenarMatriz():
+    dimension=int(input("Ingrese la dimesion de la matriz: "))
+    matriz = [[0] * dimension for _ in range(dimension)]
+
+    for fila in range(dimension):
+        for columna in range(dimension):
+            while True: 
+                letra = input(f"Ingrese la letra de la cadena numero: [{columna}]:").upper()
+                if (letra=="A" or letra=="T" or letra=="C" or letra=="G" ):
+                    matriz[fila][columna] = letra
+                    break
+                else:
+                        print("El valor ingresado no es correcto intente nuevamente")
+    return matriz
+
+def AnalizarCondcion(matriz1):
+    coincidencia = 0
+    # Empezamos a recorrer la matriz y evaluarla
+    for i in range(len(matriz1)):
+        for j in range(len(matriz1[0]) - 3):
+            # Horizontal
+            if len(set(matriz1[i][j : j + 4])) == 1:
+                coincidencia += 1
+
+            # Vertical
+            if len(set(matriz1[i][j] for i in range(i, i + 4))) == 1:
+                coincidencia += 1
+
+    for i in range(len(matriz1) - 3):
+        for j in range(len(matriz1[0]) - 3):
+            
+            if len(set(matriz1[i + k][j + k] for k in range(4))) == 1:
+                coincidencia += 1
+
+            
+            if len(set(matriz1[i + k][j + 3 - k] for k in range(4))) == 1:
+                coincidencia += 1
+    #Retornamos la condicion de la persona: 
+    if coincidencia >= 2:
+        return print("La persona es: Mutante")
+    else:
+        return print("La persona no es: Mutante")
+
+#Llamamos a las funciones
+Matriz= llenarMatriz()
+Condicon=AnalizarCondcion(Matriz)
+```
+
+
        
