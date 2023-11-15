@@ -3,7 +3,9 @@ Nombre y Apellido: Luka Perich
 
 Legajo: 51618
 
-Email:lperich29@gmail.com
+Email personal: lperich29@gmail.com
+
+Email estudiantil: luka.perich@alumnos.frm.utn.edu.ar
 
 >## Introduccion:  
 El presente trabajo corresponde al proyecto final integrador realizado para la materia Programacion I de la Tecnicatura Superior en Programación de la Universidad Tecnológica
@@ -28,7 +30,8 @@ Lo primero que hice fue hacer una funcion para llenar la matriz, la cual llena c
     
 Uuna vez la matriz estaba completa creee otra funcion que evalua y recorre  de forma vertical, horizontal o diagonal si hay alguna coincidencia de 4 letras consecutivas, esto se realizo con (set.) para verificar si hay solo un elemento único, una vez hallada la coincidencia use un contador para llevar un registro de la cantidad de coincidencia que la funcion encontraba, por ultimo use una condicion para ver si había más de una coincidencia, esta funcion retorna la condicion de la persona que, en caso de tener más de dos coincidencias retorna "Mutante" y en caso de tener 1 o menos retorna "No mutante".
 
->##Casos de Prueba:
+>## Casos de Prueba:
+
 ```bash
 Muestra por pantalla: es Mutante
 ATGCGA
